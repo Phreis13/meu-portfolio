@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedro Reis — Suporte & Segurança de TI</title>
+<meta name="description" content="Portfólio de Pedro Reis — Técnico de TI focado em Cybersecurity, Redes e Infraestrutura.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">PR<span class="nav__logo-cursor">_</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link" data-link>início</a>
+      <a href="#sobre" class="nav__link" data-link>sobre</a>
+      <a href="#habilidades" class="nav__link" data-link>skills</a>
+      <a href="#experiencia" class="nav__link" data-link>experiência</a>
+      <a href="#certificados" class="nav__link" data-link>certificados</a>
+      <a href="#contato" class="nav__link nav__link--cta" data-link>contato</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <canvas id="netCanvas" class="hero__canvas"></canvas>
+    <div class="hero__inner">
+      <p class="eyebrow"><span class="eyebrow__dot"></span> ./boot_sequence.sh --user=pedro.reis</p>
+
+      <div class="terminal" id="bootTerminal">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--r"></span>
+          <span class="terminal__dot terminal__dot--y"></span>
+          <span class="terminal__dot terminal__dot--g"></span>
+          <span class="terminal__title">pedro@soc:~$</span>
+        </div>
+        <div class="terminal__body" id="bootBody"></div>
+      </div>
+
+      <h1 class="hero__name">Pedro Reis</h1>
+      <p class="hero__role">Suporte & Segurança de TI <span class="hero__sep">/</span> Redes <span class="hero__sep">/</span> Infraestrutura</p>
+      <p class="hero__desc">Estudante de Ciência da Computação (UNA) e Técnico em Informática, atuando com Active Directory, firewall pfSense, monitoramento e resposta a incidentes. Interessado em construir defesas melhores, um firewall de cada vez.</p>
+
+      <div class="hero__actions">
+        <a href="#experiencia" class="btn btn--primary">Ver experiência</a>
+        <a href="#contato" class="btn btn--ghost">Contato</a>
+      </div>
+    </div>
+    <a href="#sobre" class="hero__scroll" aria-label="Rolar para a seção Sobre">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="about section">
+    <p class="section__eyebrow" data-reveal>$ cat sobre.txt</p>
+    <div class="about__grid">
+      <div class="about__text" data-reveal>
+        <h2 class="section__title">Sobre mim</h2>
+        <p>Sou técnico em Informática pelo COTEMIG e atualmente curso o 3º período de Ciência da Computação na UNA. Minha rotina gira em torno de manter redes, servidores e usuários seguros — do gerenciamento de Active Directory ao ajuste fino de regras de firewall.</p>
+        <p>Passei pela Força Aérea Brasileira, onde disciplina e atenção a detalhes viraram parte de como eu trabalho. Hoje, como suporte de TI na Terainfo, cuido do dia a dia de segurança: monitoramento com RMM, resposta a incidentes e hardening de endpoints.</p>
+        <p>Meu objetivo é migrar de suporte para uma posição focada 100% em Cybersecurity — SOC, análise de vulnerabilidades ou segurança de redes.</p>
+      </div>
+      <aside class="about__facts" data-reveal>
+        <div class="fact">
+          <span class="fact__label">Formação</span>
+          <span class="fact__value">Ciência da Computação — UNA (cursando)</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Base técnica</span>
+          <span class="fact__value">Técnico em Informática — COTEMIG</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Foco atual</span>
+          <span class="fact__value">Redes, AD, Firewall & Resposta a Incidentes</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Localização</span>
+          <span class="fact__value">Belo Horizonte, MG</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Idioma</span>
+          <span class="fact__value">Inglês — Intermediário</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="skills section">
+    <p class="section__eyebrow" data-reveal>$ scan --target=skills --verbose</p>
+    <h2 class="section__title" data-reveal>Habilidades</h2>
+    <p class="section__lead" data-reveal>Varredura em andamento sobre stack técnico e ferramentas de segurança.</p>
+
+    <div class="skills__grid">
+      <div class="skillgroup" data-reveal>
+        <h3 class="skillgroup__title"><span class="skillgroup__icon">◆</span> Segurança & Redes</h3>
+        <ul class="chiplist" data-chiplist>
+          <li class="chip">pfSense (Firewall)</li>
+          <li class="chip">Bitdefender</li>
+          <li class="chip">Active Directory</li>
+          <li class="chip">TCP/IP · DNS · VPN</li>
+          <li class="chip">Resposta a Incidentes</li>
+        </ul>
+      </div>
+
+      <div class="skillgroup" data-reveal>
+        <h3 class="skillgroup__title"><span class="skillgroup__icon">◆</span> Infraestrutura</h3>
+        <ul class="chiplist" data-chiplist>
+          <li class="chip">Windows Server</li>
+          <li class="chip">Linux</li>
+          <li class="chip">Docker</li>
+          <li class="chip">RMM (N-sight)</li>
+          <li class="chip">Google Workspace</li>
+        </ul>
+      </div>
+
+      <div class="skillgroup" data-reveal>
+        <h3 class="skillgroup__title"><span class="skillgroup__icon">◆</span> Dev & Dados</h3>
+        <ul class="chiplist" data-chiplist>
+          <li class="chip">Java</li>
+          <li class="chip">Python</li>
+          <li class="chip">C# + PHP</li>
+          <li class="chip">MySQL</li>
+          <li class="chip">HTML / CSS</li>
+        </ul>
+      </div>
+
+      <div class="skillgroup" data-reveal>
+        <h3 class="skillgroup__title"><span class="skillgroup__icon">◆</span> Ferramentas</h3>
+        <ul class="chiplist" data-chiplist>
+          <li class="chip">Git & GitHub</li>
+          <li class="chip">APIs REST (C#)</li>
+          <li class="chip">Criação de APIs</li>
+          <li class="chip">Cisco Packet Tracer</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="skills__status" id="skillsStatus" data-reveal>&gt; varredura concluída — 0 vulnerabilidades encontradas, 19 competências carregadas.</p>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="experience section">
+    <p class="section__eyebrow" data-reveal>$ ls -la ./experiencia/</p>
+    <h2 class="section__title" data-reveal>Experiência & Projetos</h2>
+
+    <div class="timeline">
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">2025 — atual</span>
+          <h3 class="timeline__role">Suporte de TI — Terainfo (Estágio)</h3>
+          <ul>
+            <li>Gerenciamento de usuários no Active Directory</li>
+            <li>Monitoramento contínuo com RMM (N-sight)</li>
+            <li>Firewall e segurança com pfSense, StartiSecurity e Bitdefender</li>
+            <li>Diagnóstico e resolução de incidentes de TI</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">2025 — 2026</span>
+          <h3 class="timeline__role">Soldado — Força Aérea Brasileira</h3>
+          <ul>
+            <li>Disciplina, hierarquia e trabalho sob procedimento</li>
+            <li>Base para rotina de segurança e atenção a protocolos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-reveal>
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">Set/2023 — Dez/2024</span>
+          <h3 class="timeline__role">Assistente de TI — Geoestável (Estágio)</h3>
+          <ul>
+            <li>Manutenção de computadores e instalação de sistemas</li>
+            <li>Suporte técnico a usuários (hardware e software)</li>
+            <li>Apoio à manutenção de sistemas internos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="experience__subtitle" data-reveal>Projetos & Labs</h3>
+    <div class="projects__grid">
+
+      <article class="card" data-reveal>
+        <span class="card__tag">infra & segurança</span>
+        <h4 class="card__title">Hardening de Rede Corporativa</h4>
+        <p class="card__desc">Implementação e manutenção de firewall com pfSense, aplicando regras de segurança e antivírus corporativo (Bitdefender) sobre uma base Windows Server.</p>
+        <div class="card__tech">
+          <span>pfSense</span><span>Windows Server</span><span>Bitdefender</span>
+        </div>
+      </article>
+
+      <article class="card" data-reveal>
+        <span class="card__tag">monitoramento</span>
+        <h4 class="card__title">Monitoramento & Resposta a Incidentes</h4>
+        <p class="card__desc">Rotina de monitoramento de ambientes com RMM, identificação de anomalias e resposta a incidentes, com gestão de contas via Active Directory.</p>
+        <div class="card__tech">
+          <span>N-sight RMM</span><span>Active Directory</span><span>Incident Response</span>
+        </div>
+      </article>
+
+      <article class="card" data-reveal>
+        <span class="card__tag">endpoints</span>
+        <h4 class="card__title">Padronização de Endpoints</h4>
+        <p class="card__desc">Instalação e manutenção de sistemas operacionais e softwares em escala, reduzindo chamados recorrentes de suporte por meio de padronização.</p>
+        <div class="card__tech">
+          <span>Windows</span><span>Hardware</span><span>Suporte Técnico</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICADOS -->
+  <section id="certificados" class="certs section">
+    <p class="section__eyebrow" data-reveal>$ cat certificados.log</p>
+    <h2 class="section__title" data-reveal>Certificados</h2>
+    <div class="certs__grid">
+      <div class="cert" data-reveal><span class="cert__badge">✓</span>Cisco — Introduction to Cybersecurity</div>
+      <div class="cert" data-reveal><span class="cert__badge">✓</span>Cisco — Introduction to EndPoint Security</div>
+      <div class="cert" data-reveal><span class="cert__badge">✓</span>Cisco — Computer Hardware Basics</div>
+      <div class="cert" data-reveal><span class="cert__badge">✓</span>Cisco — Introduction to IoT</div>
+      <div class="cert" data-reveal><span class="cert__badge">✓</span>Cisco — Introduction to Data Science</div>
+      <div class="cert" data-reveal><span class="cert__badge">✓</span>Cisco — Python Essentials 1</div>
+      <div class="cert" data-reveal><span class="cert__badge">✓</span>Networking Basics</div>
+      <div class="cert" data-reveal><span class="cert__badge">✓</span>Introdução ao Git e ao GitHub</div>
+      <div class="cert" data-reveal><span class="cert__badge">✓</span>DevOps Essentials</div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contact section">
+    <p class="section__eyebrow" data-reveal>$ contato --send --secure</p>
+    <h2 class="section__title" data-reveal>Vamos conversar</h2>
+    <p class="section__lead" data-reveal>Aberto a oportunidades de estágio ou júnior em Cybersecurity, Suporte Avançado ou Infraestrutura.</p>
+
+    <div class="contact__grid">
+      <ul class="contact__list" data-reveal>
+        <li>
+          <a href="mailto:pedro.carvalhoreis2006@gmail.com">
+            <span class="contact__icon">✉</span>
+            <span>
+              <strong>E-mail</strong>
+              <small>pedro.carvalhoreis2006@gmail.com</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/pedro-reis-640684283/" target="_blank" rel="noopener">
+            <span class="contact__icon">in</span>
+            <span>
+              <strong>LinkedIn</strong>
+              <small>/pedro-reis-640684283</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/" target="_blank" rel="noopener" id="githubLink">
+            <span class="contact__icon">&lt;/&gt;</span>
+            <span>
+              <strong>GitHub</strong>
+              <small>atualize com seu usuário</small>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <form class="contact__form" id="contactForm" data-reveal novalidate>
+        <div class="field">
+          <label for="fname">Nome</label>
+          <input type="text" id="fname" name="fname" placeholder="Seu nome">
+          <span class="field__error" id="err-fname"></span>
+        </div>
+        <div class="field">
+          <label for="femail">E-mail</label>
+          <input type="email" id="femail" name="femail" placeholder="voce@email.com">
+          <span class="field__error" id="err-femail"></span>
+        </div>
+        <div class="field">
+          <label for="fmsg">Mensagem</label>
+          <textarea id="fmsg" name="fmsg" rows="4" placeholder="Sobre o que você quer falar?"></textarea>
+          <span class="field__error" id="err-fmsg"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Enviar mensagem</button>
+        <p class="contact__status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Feito com HTML, CSS &amp; JavaScript · Pedro Reis © <span id="year"></span></p>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
