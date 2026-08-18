@@ -90,7 +90,6 @@ const bootBody = document.getElementById('bootBody');
 
 const bootLines = [
   { text: '&gt; autenticando usuário pedro.reis...', muted: false },
-  { text: '&gt; carregando stack: redes, AD, pfSense, RMM', muted: true },
   { text: '&gt; status: disponível para novos desafios em cybersecurity_', muted: false },
 ];
 
