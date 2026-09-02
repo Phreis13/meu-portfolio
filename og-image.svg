@@ -1,0 +1,57 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a0e27"/>
+  
+  <!-- Grid pattern background -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a2f5a" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Accent line top -->
+  <line x1="0" y1="80" x2="1200" y2="80" stroke="#00ff9f" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Main text -->
+  <text x="600" y="200" font-family="'JetBrains Mono', monospace" font-size="72" font-weight="700" fill="#ffffff" text-anchor="middle">
+    Pedro Reis
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="280" font-family="'Inter', sans-serif" font-size="42" font-weight="600" fill="#00ff9f" text-anchor="middle">
+    Cybersecurity &amp; Cloud Security
+  </text>
+  
+  <!-- Description -->
+  <text x="600" y="360" font-family="'Inter', sans-serif" font-size="28" fill="#b0b8d4" text-anchor="middle">
+    Network Security • SecOps • Azure
+  </text>
+  
+  <!-- Terminal-style element -->
+  <rect x="200" y="420" width="800" height="140" fill="#0f1a3a" stroke="#00ff9f" stroke-width="2" rx="8"/>
+  
+  <!-- Terminal header -->
+  <circle cx="220" cy="440" r="5" fill="#ff5f56"/>
+  <circle cx="245" cy="440" r="5" fill="#ffbd2e"/>
+  <circle cx="270" cy="440" r="5" fill="#27c93f"/>
+  
+  <!-- Terminal text -->
+  <text x="220" y="500" font-family="'JetBrains Mono', monospace" font-size="18" fill="#00ff9f">
+    $ ./boot_sequence.sh --user=pedro.reis
+  </text>
+  
+  <text x="220" y="540" font-family="'JetBrains Mono', monospace" font-size="18" fill="#00ff9f">
+    &gt; disponível para novos desafios em cybersecurity_
+  </text>
+  
+  <!-- Bottom accent line -->
+  <line x1="0" y1="600" x2="1200" y2="600" stroke="#00ff9f" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Corner accents -->
+  <line x1="50" y1="50" x2="50" y2="100" stroke="#00ff9f" stroke-width="3" opacity="0.8"/>
+  <line x1="50" y1="50" x2="100" y2="50" stroke="#00ff9f" stroke-width="3" opacity="0.8"/>
+  
+  <line x1="1150" y1="50" x2="1150" y2="100" stroke="#00ff9f" stroke-width="3" opacity="0.8"/>
+  <line x1="1100" y1="50" x2="1150" y2="50" stroke="#00ff9f" stroke-width="3" opacity="0.8"/>
+</svg>
